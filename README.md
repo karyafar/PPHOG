@@ -1,7 +1,9 @@
-PPHOG
+Requirements:
 =====
+sudo yum install opencv
+sudo yum install opencv-devel
+./build_all.sh
 
-PP HOG 
 
 APPLICATION
 ===========
