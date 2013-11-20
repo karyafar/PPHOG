@@ -89,10 +89,7 @@ int main(int argc, char** argv)
 		    r.height = cvRound(r.height*0.8);
 		    rectangle(img, r.tl(), r.br(), cv::Scalar(0,255,0), 3);
 	    }
-	    imshow("people detector", img);
-	    int c = waitKey(0) & 255;
-	    if( c == 'q' || c == 'Q' || !f)
-            break;
+	    imwrite("ppl_detect_result.jpg", img);
     }
     if(f)
         fclose(f);
