@@ -1,8 +1,8 @@
 Requirements:
 =====
-sudo yum install opencv
-sudo yum install opencv-devel
-./build_all.sh
+* sudo yum install opencv
+* sudo yum install opencv-devel
+* ./build_all.sh
 
 
 APPLICATION
