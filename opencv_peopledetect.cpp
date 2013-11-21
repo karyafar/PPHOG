@@ -44,8 +44,6 @@ int main(int argc, char** argv)
 	    {
 		    if(!fgets(filename, (int)sizeof(_filename)-2, f))
 			    break;
-		    //while(*filename && isspace(*filename))
-		    //	++filename;
 		    if(filename[0] == '#')
 			    continue;
 		    int l = strlen(filename);
@@ -65,7 +63,7 @@ int main(int argc, char** argv)
 	    // (and more false alarms, respectively), decrease the hitThreshold and
 	    // groupThreshold (set groupThreshold to 0 to turn off the grouping completely).
         int can = img.channels();
-	    hog.detectMultiScale(img, found, 0, Size(8,8), Size(32,32), 1.05, 2);
+	    hog.detectMultiScale(img, found, 0, Size(8,8), Size(32,32), 1.50, 3);
 	    t = (double)getTickCount() - t;
 	    printf("tdetection time = %gms\n", t*1000./cv::getTickFrequency());
 	    size_t i, j;
